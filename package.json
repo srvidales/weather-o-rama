@@ -1,0 +1,30 @@
+{
+  "name": "weather-o-rama",
+  "version": "1.0.0",
+  "description": "Weather-o-rama. Weather Dashboard. UC Berkeley Module 6 Challenge.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/srvidales/weather-o-rama.git"
+  },
+  "keywords": [
+    "weather",
+    "dashboard"
+  ],
+  "author": "Sergio R. Vidales Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srvidales/weather-o-rama/issues"
+  },
+  "homepage": "https://github.com/srvidales/weather-o-rama#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "eslint": "^8.45.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^29.6.1",
+    "jsdoc": "^4.0.2"
+  }
+}
