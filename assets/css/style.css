@@ -1,3 +1,29 @@
-head {
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main {
+    display: flex;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+#forecast {
+    display: flex;
+}
+
+nav {
+    flex-direction: column;
+}
+
+#weather {
+    border: 1px solid black;
+}
+
+nav {
     display: flex;
 }
