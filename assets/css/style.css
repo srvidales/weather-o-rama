@@ -27,3 +27,8 @@ nav {
 nav {
     display: flex;
 }
+
+#cities {
+    display: flex;
+    flex-direction: column;
+}
