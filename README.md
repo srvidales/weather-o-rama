@@ -16,7 +16,7 @@ and [here](https://git.bootcampcontent.com/University-of-California---Berkeley/U
 
 ## About
 
-The purpose of this challenge is to familiarize the student with the Javascript language by calling server-side APIs.
+The purpose of this challenge is to familiarize the student with calling server-side APIs.
 This work encompasses researching the documentation provided by the API, how to use fetch, how to work with promises,
 how to pass parameters and values to the API, etc.
 
