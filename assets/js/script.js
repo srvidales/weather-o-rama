@@ -1,7 +1,4 @@
 $(function() {
-  const key = 'WEATHER_APP_ID';
-  const weatherAppId = localStorage.getItem(key);
-
   const countryCode = 'US';
   const limit = 5;
 
@@ -16,7 +13,7 @@ $(function() {
    * @returns {Promise<Response>}
    */
   function fetchGeolocation(city, country, limit) {
-    return fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=${limit}&appid=${weatherAppId}`);
+    return fetch(`https://weather.inoutport.com/direct/&q=${city},${country}&limit=${limit}`);
   }
 
   /**
@@ -26,7 +23,7 @@ $(function() {
    * @return {Promise<Response>}
    */
   function fetchForecast(latitude, longitude) {
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${weatherAppId}&units=imperial`);
+    return fetch(`https://weather.inoutport.com/forecast/&lat=${latitude}&lon=${longitude}&units=imperial`);
   }
 
   /**
@@ -221,7 +218,7 @@ $(function() {
         element.attr('data-lon', searchHistory[i].lon);
         citiesDiv.append(element);
         element.on('click', function() {
-          fetchInfo(searchHistory[i].name, 'US', limit, element);
+          fetchInfo(searchHistory[i].name, countryCode, limit, element);
         });
       }
     }
