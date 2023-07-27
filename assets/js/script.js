@@ -215,12 +215,14 @@ $(function() {
       const citiesDiv = $('#cities');
 
       for (let i = 0; i < searchHistory.length; i++) {
-        const element = $(`<button class="city-button">xx</button>`);
+        const element = $(`<button class="city-button"></button>`);
         element.html(searchHistory[i].name);
         element.attr('data-lat', searchHistory[i].lat);
         element.attr('data-lon', searchHistory[i].lon);
         citiesDiv.append(element);
-        // TODO: Add element onclick event.
+        element.on('click', function() {
+          fetchInfo(searchHistory[i].name, 'US', limit, element);
+        });
       }
     }
   }
